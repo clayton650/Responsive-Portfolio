@@ -247,6 +247,8 @@ footer, .push {
 		width: 335px;
 		top: 60px;
 		z-index: 1;
+		overflow: scroll;
+    	height: 90%;
 	}
 
 	.email{
@@ -491,8 +493,16 @@ footer, .push {
 		width: 98%;
 	}
 
+	header #logo h1 {
+		font-size: 130%;
+	}
+
+	header nav{
+		width:63%;
+	}
+
 	section{
-		width: 64%;
+		width: 67%;
 	}
 
 	section .about img {
@@ -501,8 +511,16 @@ footer, .push {
 	}
 
 	aside{
-		width: 30%;
-		margin-left: 5%;
+		width: 31%;
+		margin-left: 0%;
+	}
+
+	aside ul.socialLinks li a i {
+		font-size: 145%;
+	}
+
+	.email{
+		font-size: 12px;
 	}
 
 	.figureWrapper {
@@ -539,37 +557,25 @@ footer, .push {
 
 @media screen and (max-width: 768px) {
 
-	.contentWrapper, section, aside{
-		width: 98%;
+
+	header nav {
+		width: 56%;
 	}
 
-	#logo h1{
-		font-size: 137%
-	}
-
-	section, aside{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	section .about img {
-	    float: left;
-	    width: 35%;
+	header #head-shot{
+		width: 9%;
 	}
 
 	aside{
-		margin-top: 40px;
-		
+		width: 41%;
 	}
 
-	aside ul.socialLinks {
-		margin-left: -1%;
+	section {
+		width: 57%;
 	}
 
-	aside ul.socialLinks li {
-		margin-left: 1%;
-    	width: 12%;
+	aside ul.socialLinks li a i {
+		font-size: 173%;
 	}
 
 	.figureWrapper{
@@ -610,6 +616,10 @@ footer, .push {
 	}
 
 	header{
+		position: static;
+	}
+
+	aside{
 		position: static;
 	}
 
