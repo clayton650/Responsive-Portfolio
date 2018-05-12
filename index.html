@@ -9,56 +9,185 @@
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 <body>
   <div class="wrapper">
     <header>
       <div class="contentWrapper">
+        <span id="head-shot">
+          <img  src="assets/image/profilepic.png" alt="Profile Picture">
+        </span>
         <a href="index.html" id="logo"><h1 id="text">Clayton Thompson</h1></a>
         <nav>
-          <ul>
-            <li><a class="selected" href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="pageLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="contentWrapper">
+      <aside>
+         <div class="contentBox">
+          <h2>Full Stack Software Developer</h2>
+          <h2>Project Manager</h2>
+          <span class='break'>San Francisco, CA</span>
+          <ul>
+          <li>10 years of PM experience</li>
+          <li>5 years of programming experience</li>
+          </ul>
+          <hr>
+          <ul class="square">
+            <li>JavaScript: Node.js, Express.js</li>
+            <li>Python: Django, Flask</li>
+            <li>Frontend: Bootstrap, React.js, jQuery</li>
+            <li>Database: PostgreSQL, MySQL, MongoDB, Firebase, Redis</li>
+            <li>Other: Git/Github, Responsive Design, Web Scraping, AWS, HTML5/CSS3, SASS, ES6+, Lint, Webpack, TypeScript</li>
+          </ul>
+          <hr>
+          <ul class="socialLinks">
+            <li class="black"><a href="https://github.com/clayton650" title="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li class="blue"><a href="https://www.linkedin.com/in/clayton-thompson" title="linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li class="orange"><a href="https://stackoverflow.com/users/802521/clayton" title="stackoverflow" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
+            <li id="email"><a href="#"><i class="fa fa-envelope" title="email"></i></a></li>
+            <li ><a href="assets/clayton-thompson-resume.pdf" title="resume" target="_blank"><i class="fa fa-file-pdf-o" title="resume"></i></a></li>
+          </ul>
+        </div>
+        <footer>
+          Clayton Thompson &copy; 2018
+        </footer>
+      </aside>
+      <section class="clear">
       
-      <section class="contentBox clear">
-        <h1 class="headerBox">About Me</h1>
-        <figure class="about" >
-          <img src="assets/image/profilepic.png" alt="Profile Picture" />
-        </figure>
-        
-        <article>
-
+        <article id="about" class="contentBox waypoint">
+          <h1 class="headerBox">About Me</h1>
           <p>In 2009, after reading The 4-Hour Workweek,  I started a t-shirt printing company with my brother in Los Angeles. Our focus, other than printing t-shirts, was to build software that automated the business. Two years in we had printed a lot of shirts, but made little progress on the software and were working way more than 4 hours a week. We hired a number of great programmers; however, only when I started programming did we begin to make real progress. What we found was that with a solid understanding of the business, a little bit of programming knowledge went a long way. I continued programming part-time for the next 5 years focusing most of my efforts on building a product catalog that combined over 30,000 SKUs from more than 50 different vendors. I also created an information management system that handled the full project lifecycle from lead generation to account receivables. As I became more knowledgeable about programming, I also began to understand the business at a much deeper level, a stark contrast to when we started the company knowing nothing about the business or programming.</p>
-
           <p>More Coming Soon...</p>
-
+        </article>
+        <article id="portfolio" class="contentBox waypoint">
+          <h1 class="headerBox">Portfolio</h1>
+    
+          <div class="figureWrapper">
+            <figure>
+              <a href="https://github.com/clayton650/hangman-cli" target="_blank">
+                <div class="crop">
+                  <img src="assets/image/hangman-cli.png" alt="hangman client app">
+                </div>
+                <figcaption>Hangman Game Client - Node</figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://github.com/clayton650/bamazon" target="_blank">
+                <div class="crop">
+                  <img src="assets/image/bamazon-cli.png" alt="hangman client app">
+                </div>
+                <figcaption>Bamazon Client - Node</figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://i-need-friends.herokuapp.com/" target="_blank">
+                <div class="crop">
+                  <img src="assets/image/friend-finder.png" alt="friend finder app">
+                </div>
+                <figcaption>Friend-Finder - Node/Express</figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://another-splash-page.herokuapp.com/" target="_blank">
+                <div class="crop">
+                  <img src="assets/image/another-splash-page.png" alt="article comments">
+                </div>
+                <figcaption>Another Splash Page - Node/Express/MySQL</figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://article-comments.herokuapp.com/" target="_blank">
+                <div class="crop">
+                  <img src="assets/image/article-comments.png" alt="article comments">
+                </div>
+                <figcaption>Article Commenter - Node/Express/MongoDB</figcaption>
+              </a>
+            </figure>
+            <figure>
+              <a href="https://another-clicky-game.herokuapp.com/" target="_blank">
+                <div class="crop">
+                  <img src="assets/image/clicky-game.png" alt="clicky memory game">
+                </div>
+                <figcaption>Clicky Memory Game - Raect</figcaption>
+              </a>
+            </figure>
+          </div>
         </article>
       </section>
-
-      <aside class="contentBox">
-          <h2 class="headerBox">Connect with Me</h2>
-          <ul class="socialLinks">
-            <li class="black"><a href="https://github.com/clayton650" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li class="blue"><a href="https://www.linkedin.com/in/clayton-thompson" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li class="orange"><a href="https://stackoverflow.com/users/802521/clayton" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a></li>
-          </ul>  
-      </aside>
-
     </main>
-    <div class="push"></div>
+    <!-- <div class="push"></div> -->
   </div>
-  <footer>
+  <!-- <footer>
     <div>
       <span>Clayton Thompson &copy; 2018</span>
     </div>
-  </footer>
+  </footer> -->
+  <script type="text/javascript" src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script type="text/javascript">
 
-  <script type="text/javascript" src="assets/utils.js"></script>
+    //Show email in sidebar
+    $('#email').one('click', function(e){
+      e.preventDefault();
+      var $html = $('<div>').addClass('email').text('claytonHthompson@gmail.com');
+      var parent = $(this).closest('ul');
+      $html.insertAfter(parent);
+    });
+
+    //Set selected  nav
+    function set_selected_nav(hash){
+      $(".pageLinks li a.selected").removeClass('selected');
+      $(".pageLinks li a[href='"+hash+"']").addClass('selected');
+    };
+
+    function handle_nav_click(hash){
+      set_selected_nav(hash);
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+
+    }
+
+    //Update nav when page loads
+    var hash = window.location.hash;
+    if(hash){
+      handle_nav_click(hash);
+    }
+
+    //Handle nav clicks
+    $(".pageLinks li a").on('click', function(e){
+      e.preventDefault();
+      handle_nav_click(this.hash);
+    });
+
+    //config waypoints
+    var waypoints = $('.waypoint').waypoint({
+      handler: function(direction) {
+        console.log(this.element.id + ' hit');
+        var current_id = 'about';
+        if(direction === 'down'){
+          current_id = this.element.id;
+        }else{
+          var next_waypoint_id = $(this.element).prev().attr('id');
+          if(next_waypoint_id){
+            current_id = next_waypoint_id;
+          }
+        }
+        console.log('current_id', current_id);
+        var hash = '#'+current_id;
+        set_selected_nav(hash);
+      }
+    });
+  </script>
 </body>
 </html>
